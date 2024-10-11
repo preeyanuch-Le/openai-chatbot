@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    width: 600px;  /* Increase width */
+    text-align: center;
+}
+
+#chatbox {
+    height: 400px;  
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    overflow-y: scroll;
+    padding: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.message {
+    max-width: 70%;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    line-height: 1.6;
+}
+
+.user {
+    align-self: flex-end;
+    background-color: #007bff;
+    color: white;
+    text-align: right;
+    font-weight: bold;  /* Make user messages bold */
+}
+
+.bot {
+    align-self: flex-start;
+    background-color: #f1f1f1;
+    color: black;
+    text-align: left;
+    border-left: 5px solid #007bff;
+    /* font-style: italic; */
+    font-size: 16px;  /* Increase font size for readability */
+    line-height: 1.8;  /* Add more spacing between lines */
+    padding: 15px;  /* Increase padding */
+    white-space: pre-wrap;  /* Preserve line breaks */
+}
+
+
+
+textarea {
+    width: 100%;
+    height: 80px;  /* Increase height of input box */
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+button {
+    padding: 12px 25px;  /* Make buttons slightly larger */
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}

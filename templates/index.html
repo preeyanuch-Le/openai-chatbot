@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot with PDF Upload</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Chatbot with PDF Upload</h1>
+
+        <div id="chatbox"></div>
+
+        <input type="file" id="pdfUpload" accept=".pdf">
+        <textarea id="userQuery" placeholder="Enter your query..."></textarea>
+
+        <button onclick="submitQuery()">Submit Query</button>
+        <button onclick="clearChat()">Clear Chat</button>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
